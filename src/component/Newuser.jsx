@@ -24,7 +24,7 @@ const Newuser = () => {
         },
         onSubmit: async (values) => {
           try {
-            const resp = await axios.post("http://localhost:3000/login", values);
+            const resp = await axios.post("https://sample-backend-noqp.onrender.com/login", values);
             if (resp.status == 200) {
               window.localStorage.setItem("mytoken",resp.data.message)
               navigate("/Roonstep");

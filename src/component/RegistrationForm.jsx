@@ -34,7 +34,7 @@ const RegistrationForm  = () => {
       onSubmit: async (values) => {
         try {
           // await axios.post("http://localhost:3000/register", values);
-          await axios.post("https://sample-backend-noqp.onrender.com/",values);
+          await axios.post("https://sample-backend-noqp.onrender.com/register",values);
           navigate('/Newuser');
         } catch (error) {
           console.log(error);
